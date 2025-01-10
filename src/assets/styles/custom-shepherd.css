@@ -1,0 +1,38 @@
+.light-theme .shepherd-has-title .shepherd-content .shepherd-header,
+.light-theme .shepherd-element {
+  background: #ffffff;
+}
+.dark-theme .shepherd-has-title .shepherd-content .shepherd-header,
+.dark-theme .shepherd-element {
+  background: rgb(44, 44, 50);
+}
+.dark-theme .shepherd-title,
+.dark-theme .shepherd-text {
+  color: whitesmoke;
+}
+
+.shepherd-button {
+  background: #881fff;
+}
+
+.shepherd-button:not(:disabled):hover {
+  background: #3fa9f5;
+}
+
+.shepherd-text {
+  font-size: 0.95em;
+  padding: 0.5rem 0.9rem;
+}
+
+.shepherd-element[data-popper-placement^='top'] > .shepherd-arrow {
+  bottom: -5px;
+}
+.shepherd-element[data-popper-placement^='bottom'] > .shepherd-arrow {
+  top: -5px;
+}
+.shepherd-element[data-popper-placement^='left'] > .shepherd-arrow {
+  right: -4px;
+}
+.shepherd-element[data-popper-placement^='right'] > .shepherd-arrow {
+  left: -4px;
+}

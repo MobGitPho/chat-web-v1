@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "useDefineForClassFields": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "outDir": "./build",
+    "types": [
+      "vitest",
+      "vite/client",
+      "unplugin-icons/types/vue",
+      "naive-ui/volar"
+    ],
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "exclude": ["build", "node_modules"]
+}
