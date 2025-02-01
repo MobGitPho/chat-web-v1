@@ -207,7 +207,7 @@
                     {{ t('validate') }}
                   </n-button>
 
-                  <n-divider ref="divider" class="!my-2">
+                  <!--n-divider ref="divider" class="!my-2">
                     <span class="text-sm">{{ t('or') }}</span>
                   </n-divider>
 
@@ -215,9 +215,9 @@
                     class="mb-5"
                     @display-dialog="(val: boolean) => {
                       cardVisible = !val
-                    }" />
+                    }" /-->
 
-                  <GoogleAuth />
+                  <!--GoogleAuth /-->
 
                   <template v-if="allowRegistration">
                     <div class="h-3"></div>

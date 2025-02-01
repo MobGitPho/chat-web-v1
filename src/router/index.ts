@@ -103,6 +103,27 @@ export const routesList = [
   },
 
   {
+    redirect: Routes.MESSAGES.PATH,
+    path: Routes.MESSAGES.PATH,
+    name: Routes.MESSAGES.NAME,
+    component: ContainerView,
+    children: [
+      {
+        path: Routes.MESSAGES.PATH,
+        name: Routes.MESSAGES.NAME,
+        meta: {
+          requiresAuth: true,
+          title: t('messages'),
+          icon: ViewSidebarFilled,
+          access: 'all',
+        },
+        component: () => import('@/views/Messages/index.vue'),
+      },
+    ],
+  },
+
+
+  {
     redirect: Routes.DASHBOARD.PATH,
     path: Routes.DASHBOARD.PATH,
     name: Routes.DASHBOARD.NAME,

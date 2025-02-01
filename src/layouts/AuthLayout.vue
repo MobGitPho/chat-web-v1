@@ -95,7 +95,7 @@
       align="center"
       class="container mx-auto">
       <div class="text-xs text-gray-500">
-        &copy; copyright {{ new Date().getFullYear() }} | edPage
+        &copy; copyright {{ new Date().getFullYear() }} | JP
       </div>
       <n-space justify="center" align="center">
         <n-select

@@ -54,6 +54,10 @@ export default {
     NAME: 'Notifications',
     PATH: '/notifications',
   },
+  MESSAGES: {
+    NAME: 'Messages',
+    PATH: '/messages',
+  },
   // Admin Routes
   SETTINGS: {
     NAME: 'Settings',

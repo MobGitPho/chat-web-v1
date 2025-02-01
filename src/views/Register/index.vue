@@ -295,17 +295,17 @@
                     {{ t('validate') }}
                   </n-button>
 
-                  <n-divider ref="divider" class="!my-2">{{
+                  <!--n-divider- ref="divider" class="!my-2">{{
                     t('or')
-                  }}</n-divider>
+                  }}</n-divider-->
 
-                  <PhoneAuth
+                  <!--PhoneAuth
                     class="mb-5"
                     @display-dialog="(val: boolean) => {
                 cardVisible = !val
-              }" />
+              }" /-->
 
-                  <GoogleAuth />
+                  <!--GoogleAuth /-->
 
                   <div class="mt-2">
                     <n-button
