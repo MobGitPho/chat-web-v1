@@ -3,7 +3,6 @@ export class GroupModel {
     id?: number
     name?: string | null
     code?: string | null
-    description?: string | null
 
     deletedAt?: string | null
     createdAt?: string
@@ -13,7 +12,6 @@ export class GroupModel {
         id?: number,
         name?: string | null,
         code?: string | null,
-        description?: string | null,
 
         deletedAt?: string | null,
         createdAt?: string,
@@ -22,7 +20,6 @@ export class GroupModel {
         this.id = id
         this.name = name
         this.code = code
-        this.description = description
 
         this.deletedAt = deletedAt
         this.createdAt = createdAt

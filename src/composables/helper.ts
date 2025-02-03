@@ -35,7 +35,11 @@ export const useHelper = () => {
       parsedData = {}
     }
 
-    return parsedData[locale.value.toUpperCase()] || parsedData['fr'] || ''
+    return parsedData
+    ? parsedData[locale.value.toUpperCase()] || parsedData['fr'] || ''
+    : ''
+    
+    //parsedData[locale.value.toUpperCase()] || parsedData['fr'] || ''
   }
 
   const tr = (data: any) => {

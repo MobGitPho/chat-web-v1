@@ -209,5 +209,9 @@
   "sendCredentialsEmailToUser": "Send connection parameters by email to the user",
   "resetAndSendCredentialsEmail": "Reset and send connection settings by email to the user",
   "userAccountPasswordReset": "The user's account password at {0} has been successfully reset. \nThe new password is: {1}",
-  "messages": "Messages"
+  "messages": "Messages",
+  "addGroup": "Add group",
+  "addUser": "Add user",
+  "groups": "Groups",
+  "noItemGroupAdded": "No item group added"
 }

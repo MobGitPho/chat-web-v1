@@ -209,5 +209,9 @@
   "roles": "Rôles",
   "resetAndSendCredentialsEmail": "Réinitialiser et envoyer les paramètres de connexion par mail à l'utilisateur",
   "userAccountPasswordReset": "Le mot de passe du compte de l'utilisateur à l'adresse {0} a été réinitialisé avec succès. Le nouveau mot de passe est le suivant: {1}",
-  "messages": "Messages"
+  "messages": "Messages",
+  "addGroup": "Ajouter un groupe",
+  "addUser": "Ajouter un utilisateur",
+  "groups": "Groupes",
+  "noItemGroupAdded": "Aucun groupe ajouté"
 }

@@ -1,15 +1,18 @@
 import { PermissionModel } from '@/models/permission'
 import { RoleModel } from '@/models/role'
+import { GroupModel} from '@/models/group'
 
 export interface AccessState {
   roles: RoleModel[]
   permissions: PermissionModel[]
+groups :GroupModel[]
 }
 
 export const useAccessStore = defineStore('access', {
   state: (): AccessState => ({
     roles: [],
     permissions: [],
+    groups: [],
   }),
   getters: {},
   actions: {
@@ -34,6 +37,19 @@ export const useAccessStore = defineStore('access', {
 
       if (task.success && task.result.data) {
         this.permissions = task.result.data
+      }
+    },
+
+    async loadGroups() {
+      const { request } = useApi()
+
+      const task = await request({
+        url: '/groups',
+      })
+
+      if (task.success && task.result.data) {
+        this.groups = task.result.data
+       // console.log('this.groups', this.groups)
       }
     },
   },
